@@ -25,7 +25,11 @@ export class SwitchesPageComponent {
       return;
     }
 
+    const { termsAndConditions, ...newPerson } = this.myForm.value;
+
+    this.person = newPerson;
     console.log(this.myForm.value);
+    console.log(this.person);
     this.myForm.reset();
   }
 
